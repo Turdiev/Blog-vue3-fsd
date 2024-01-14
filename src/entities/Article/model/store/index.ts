@@ -1,7 +1,6 @@
 import { defineStore } from 'pinia'
 import type { IPost, IPostModel } from '@/entities/Article/model/types'
 import { fetchPostById, fetchPosts } from '@/entities/Article/api'
-import type { RouteParamValue } from 'vue-router'
 
 export const usePostModel = defineStore({
   id: 'post',
@@ -21,7 +20,7 @@ export const usePostModel = defineStore({
       }
     },
 
-    async fetchPostById(id: string | number):Promise<void> {
+    async fetchPostById(id: string):Promise<void> {
       const item = await fetchPostById(id)
 
       if (item) {

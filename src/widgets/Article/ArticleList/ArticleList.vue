@@ -14,7 +14,8 @@ defineProps<{
     <Card
       v-for="post in posts"
       :key="post.id"
-      :article="post" />
+      :article="post"
+    />
   </div>
 </template>
 

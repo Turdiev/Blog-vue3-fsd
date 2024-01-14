@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 
 import { Logo } from '@/shared/ui/Logo'
 import { TheNavigation } from '@/shared/ui/TheNavigation'

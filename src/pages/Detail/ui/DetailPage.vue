@@ -24,7 +24,7 @@ onBeforeMount(async () => {
       <Typography tag-name="h1" size="xl" class="detail-page__title">
         {{ post.title }}
       </Typography>
-      <ImageWrapper :src="post.image" size="large"/>
+      <ImageWrapper :src="post?.image" size="large"/>
       <div class="detail-page__description">
         <Typography tag-name="p" size="sm">About</Typography>
         <Typography tag-name="p" size="l">{{ post.description }}</Typography>

@@ -5,6 +5,6 @@ export const fetchPosts = async () => {
   return (await apiResponse.get(`posts/`)).data
 }
 
-export const fetchPostById = async (id: string | RouteParamValue[]) => {
+export const fetchPostById = async (id: string | number) => {
   return (await apiResponse.get(`posts/${id}`)).data
 }
