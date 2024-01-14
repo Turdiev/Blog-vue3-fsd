@@ -12,8 +12,8 @@ defineProps<{
 <template>
   <div class="article-list">
     <Card
-      v-for="post in posts"
-      :key="post.id"
+      v-for="(post, index) in posts"
+      :key="`${post.id}_${index}`"
       :article="post"
     />
   </div>
