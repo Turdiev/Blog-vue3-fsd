@@ -1,0 +1,18 @@
+.detail-page {
+
+  &__title {
+    margin-bottom: 73px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 60%;
+    margin-top: 80px;
+
+    @media (max-width: $breakpoint-l) {
+      width: 100%;
+    }
+  }
+}

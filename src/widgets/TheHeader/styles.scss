@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+  height: 121px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: calc(var(--padding-m) * 2 + 1360px);
+    padding: 48px var(--padding-m);
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 91px;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    @media (max-width: $breakpoint-m) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @media (max-width: $breakpoint-m) {
+      display: block;
+    }
+  }
+}

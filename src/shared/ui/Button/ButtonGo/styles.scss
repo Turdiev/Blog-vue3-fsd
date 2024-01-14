@@ -1,0 +1,19 @@
+.button-go {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 358px;
+  height: 179px;
+  border-radius: 999px 999px 0 0;
+  background-color: var(--color__black);
+  color: var(--color__white);
+  text-align: center;
+  line-height: 50px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+  @media (max-width: $breakpoint-xs) {
+    width: 260px;
+    height: 140px;
+  }
+}

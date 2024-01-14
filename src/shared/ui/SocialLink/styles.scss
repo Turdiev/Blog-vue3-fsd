@@ -1,0 +1,16 @@
+.social-link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--color__black);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--color__black);
+  }
+}

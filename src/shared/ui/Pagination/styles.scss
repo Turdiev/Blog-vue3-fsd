@@ -1,0 +1,74 @@
+.pagination {
+
+  &__pages {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__button {
+    position: relative;
+    border: 1px solid var(--color__grey--light);
+    min-width: 40px;
+    min-height: 40px;
+    padding: 8px;
+    font-weight: 400;
+    color: var(--color__black);
+    background-color: var(--color__grey--light);
+    border-radius: 12px;
+    cursor: pointer;
+
+    &._arrow-btn {
+      background-color: var(--color__white);
+    }
+
+    &--arrow-prev {
+      &::before {
+        transform: translate(-50%, -50%) rotate(135deg);
+      }
+
+      &::after {
+        transform: translate(0, -50%) rotate(135deg);
+      }
+    }
+
+    &:focus-visible,
+    &:hover {
+      border-color: var(--color__blue);
+      color: var(--color__blue);
+    }
+
+    &:active {
+      border-color: var(--color__red--dark);
+      color: var(--color__red--dark);
+    }
+
+    &:disabled {
+      border-color: var(--color__grey--transparent);
+      color: var(--color__grey--transparent);
+    }
+
+    &.active {
+      border-color: var(--color__dark);
+      background-color: var(--color__dark);
+      color: var(--color__white);
+    }
+  }
+}
+
+@media (max-width: $breakpoint-s) {
+  .pagination {
+    &__pages {
+      gap: 4px;
+    }
+
+    &__button {
+      min-width: 30px;
+      min-height: 30px;
+      padding: 4px;
+      font-size: 14px;
+    }
+    span {
+      font-size: 10px;
+    }
+  }
+}

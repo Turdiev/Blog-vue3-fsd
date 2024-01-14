@@ -1,0 +1,27 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+
+  &._is-hover {
+    transform: translateY(-20px);
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+
+  &__link {
+    //display: inline-block;
+    height: 0;
+    color: var(--color__pink);
+    margin-top: 24px;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    &._is-show {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 336px));
+    gap: 32px;
+
+    @media (max-width: $breakpoint-xl) {
+        grid-template-columns: repeat(3, minmax(200px, 336px));
+    }
+
+    @media (max-width: $breakpoint-m) {
+
+        grid-template-columns: repeat(2, minmax(200px, 336px));
+
+    }
+
+    @media (max-width: $breakpoint-s) {
+        display: flex;
+        flex-direction: column;
+        padding: 0 var(--padding-m);
+        gap: 20px;
+    }
+
+    @media (max-width: $breakpoint-xs) {
+        padding: 0
+    }
+}

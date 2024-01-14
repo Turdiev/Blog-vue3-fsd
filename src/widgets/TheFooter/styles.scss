@@ -1,0 +1,93 @@
+.footer {
+  background: var(--color__pink);
+  padding-top: 140px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+
+    @media (max-width: $breakpoint-m) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+
+  &__left {
+    width: 50%;
+
+    @media (max-width: $breakpoint-m) {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+    width: 30%;
+  }
+
+  &__text {
+    width: 200px;
+  }
+
+  &__title {
+    & span {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+      }
+
+      & ._no-underline {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 154px;
+
+    @media (max-width: $breakpoint-l) {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 60px;
+    }
+  }
+
+  &__button {
+    @media (max-width: $breakpoint-l) {
+      order: 2;
+    }
+  }
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}

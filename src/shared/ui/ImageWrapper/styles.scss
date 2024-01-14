@@ -1,0 +1,16 @@
+.image-wrapper {
+  width: 100%;
+  background: var(--color__grey);
+
+  &._small {
+    height: 280px;
+  }
+
+  &._large {
+    height: 700px;
+
+    @media (max-width: $breakpoint-l) {
+      height: 500px;
+    }
+  }
+}

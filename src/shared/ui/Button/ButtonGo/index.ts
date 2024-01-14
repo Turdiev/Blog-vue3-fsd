@@ -1,0 +1,1 @@
+export { default as ButtonGo } from './ButtonGo.vue'

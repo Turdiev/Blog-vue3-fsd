@@ -1,0 +1,1 @@
+export { default as SwitchToLanguage } from './SwitchToLanguage.vue'

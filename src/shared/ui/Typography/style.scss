@@ -1,0 +1,40 @@
+.typography {
+  font-weight: 400;
+  color: var(--color__black);
+}
+
+.sm {
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (max-width: $breakpoint-l) {
+    font-size: 14px;
+  }
+}
+
+.m {
+  font-size: 20px;
+  line-height: 24px;
+
+  @media (max-width: $breakpoint-l) {
+    font-size: 18px;
+  }
+}
+
+.l {
+  font-size: 36px;
+  line-height: 44px;
+
+  @media (max-width: $breakpoint-l) {
+    font-size: 30px;
+  }
+}
+
+.xl {
+  font-size: 84px;
+  line-height: 100px;
+
+  @media (max-width: $breakpoint-l) {
+    font-size: 64px;
+  }
+}
